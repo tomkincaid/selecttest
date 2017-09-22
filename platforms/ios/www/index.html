@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'">
+<title>Loading Jauntlet</title>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+function onBodyLoad() {
+	document.addEventListener("deviceready", onDeviceReady, false);
+}
+function onDeviceReady() {
+	console.log("onDeviceReady");
+}
+</script>
+</head>
+<body onload="onBodyLoad();">
+<select id="myselect">
+<option value="1">Option 1</option>
+<option value="2">Option 2</option>
+<option value="3">Option 3</option>
+</select>
+</body>
+</html>
